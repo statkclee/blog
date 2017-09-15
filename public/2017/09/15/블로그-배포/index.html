@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.27" />
+
+
+<title>블로그 배포 - 공식 xwMOOC 블로그</title>
+<meta property="og:title" content="블로그 배포 - 공식 xwMOOC 블로그">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/xwMOOC-google.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://www.facebook.com/xwmooc/">Facebook</a></li>
+    
+    <li><a href="https://github.com/statkclee">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">블로그 배포</h1>
+
+    
+    <span class="article-date">2017/09/15</span>
+    
+
+    <div class="article-content">
+      <div id="---" class="section level2">
+<h2>1. 데이터 분석 블로그 아키텍쳐</h2>
+<p>데이터 분석에 대한 사내 경험공유를 위한 정정 웹사이트를 구축하여 누구나 R 마크다운(markdown)을 활용하여 쉽고 빠르게 데이터 분석에 대한 노하우를 공유한다.</p>
+<ul>
+<li>저작도구: R Markdown, <a href="https://bookdown.org/yihui/blogdown/">blogdown</a></li>
+<li>정적 웹사이트 개발: <a href="https://gohugo.io/">휴고(Hugo)</a></li>
+<li>데이터 분석 블로그 웹서버: AWS EC2 인스턴스(t2.micor)
+<ul>
+<li>t2.micro 인스턴스 사양: 1 vCPU, 1GB</li>
+<li>t2.micro 가격: <span class="math inline">\(0.016/시간, 1,200원/\)</span> 기준, 매월 13,824원</li>
+</ul></li>
+</ul>
+
+<figure >
+    
+        <img src="/fig/wz-blog-architecture.png" alt="Some alt text" />
+    
+    
+</figure>
+
+</div>
+<div id="-----" class="section level2">
+<h2>2. 데이터 분석 정적 웹사이트 블로그 구축</h2>
+<p>데이터 분석 정적 웹사이트 블로그 구축을 위한 자세한 사항은 다음 웹사이트를 참고한다.</p>
+<p><a href="https://statkclee.github.io/ds-authoring/ds-blogdown.html">데이터 과학을 위한 저작도구, 블로그 - blogdown</a></p>
+<p>예를 들어, AWS 클라우드에 데이터 분석 블로그를 배포하는 경우 다음과 같다.</p>
+<ul>
+<li>Public DNS (IPv4): <a href="http://ec2-xx-xxx-xxxx-xxx.ap-northeast-2.compute.amazonaws.com/" class="uri">http://ec2-xx-xxx-xxxx-xxx.ap-northeast-2.compute.amazonaws.com/</a></li>
+</ul>
+</div>
+<div id="netlify-" class="section level2">
+<h2>3. Netlify 배포</h2>
+<p>Netlify 배포할 경우, 휴고 버젼이 매우 중요합니다. <a href="https://bookdown.org/yihui/blogdown/netlify.html">3.1 Netlify</a>에서 <code>yihui</code>가 지적했듯이 휴고 기본버젼이 0.17인데 최소 0.20이상 사용할 것을 강조하고 있습니다. 특히, <a href="https://www.netlify.com/">Netlify</a>에서 <strong>HUGO_VERSION</strong> 0.24.1로 설정할 경우 큰 문제는 없는 듯 하다.</p>
+<pre class="r"><code>library(blogdown)
+hugo_version()
+## [1] &#39;0.27&#39;</code></pre>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

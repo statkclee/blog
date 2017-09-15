@@ -6,15 +6,33 @@
     <description>Recent content in Tags on 공식 xwMOOC 블로그</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 13 Sep 2017 13:09:13 -0600</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Blogdown</title>
+      <link>/tags/blogdown/</link>
+      <pubDate>Wed, 13 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/blogdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>/tags/netlify/</link>
+      <pubDate>Fri, 15 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/netlify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Plot</title>
       <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Tue, 12 Sep 2017 13:09:13 -0600</pubDate>
       
       <guid>/tags/plot/</guid>
       <description></description>
@@ -23,7 +41,7 @@
     <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Fri, 15 Sep 2017 13:09:13 -0600</pubDate>
       
       <guid>/tags/r-markdown/</guid>
       <description></description>
@@ -32,9 +50,45 @@
     <item>
       <title>Regression</title>
       <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <pubDate>Tue, 12 Sep 2017 13:09:13 -0600</pubDate>
       
       <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>모형</title>
+      <link>/tags/%EB%AA%A8%ED%98%95/</link>
+      <pubDate>Wed, 13 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/%EB%AA%A8%ED%98%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>배포</title>
+      <link>/tags/%EB%B0%B0%ED%8F%AC/</link>
+      <pubDate>Fri, 15 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/%EB%B0%B0%ED%8F%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>붓꽃</title>
+      <link>/tags/%EB%B6%93%EA%BD%83/</link>
+      <pubDate>Wed, 13 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/%EB%B6%93%EA%BD%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>헬로월드</title>
+      <link>/tags/%ED%97%AC%EB%A1%9C%EC%9B%94%EB%93%9C/</link>
+      <pubDate>Wed, 13 Sep 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/tags/%ED%97%AC%EB%A1%9C%EC%9B%94%EB%93%9C/</guid>
       <description></description>
     </item>
     

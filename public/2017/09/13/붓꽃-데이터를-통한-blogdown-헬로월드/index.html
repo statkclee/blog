@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.27" />
+
+
+<title>붓꽃 데이터를 통한 Blogdown 헬로월드 - 공식 xwMOOC 블로그</title>
+<meta property="og:title" content="붓꽃 데이터를 통한 Blogdown 헬로월드 - 공식 xwMOOC 블로그">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/xwMOOC-google.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://www.facebook.com/xwmooc/">Facebook</a></li>
+    
+    <li><a href="https://github.com/statkclee">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">붓꽃 데이터를 통한 Blogdown 헬로월드</h1>
+
+    
+    <span class="article-date">2017/09/13</span>
+    
+
+    <div class="article-content">
+      <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+
+
+<div id="iris--" class="section level2">
+<h2>1. 붓꽃(iris) 데이터 분석</h2>
+<p>붗꽃 데이터 분석을 통해서 통계분석 보고서에서 자주 활용되는 기능을 점검한다.</p>
+<ul>
+<li>데이터 가져오기</li>
+<li>데이터 살펴보기</li>
+<li>모형적합</li>
+<li>시각화</li>
+<li>자바스크립트 라이브러리: DT</li>
+</ul>
+</div>
+<div id="-" class="section level2">
+<h2>2. 기능 점검</h2>
+<p>데이터 가져오기와 데이터 살펴보고 모형접합 및 모형 살펴보기.</p>
+<pre class="r"><code>iris_df &lt;- read_csv(&quot;../../data/iris.csv&quot;)
+
+DT::datatable(iris_df)</code></pre>
+<div id="htmlwidget-1" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Setosa","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Versicolor","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica","Virginica"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>sepal.length<\/th>\n      <th>sepal.width<\/th>\n      <th>petal.length<\/th>\n      <th>petal.width<\/th>\n      <th>variety<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"crosstalkOptions":{"key":null,"group":null},"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>
+summary(iris_df)
+##   sepal.length    sepal.width     petal.length    petal.width   
+##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+##    variety         
+##  Length:150        
+##  Class :character  
+##  Mode  :character  
+##                    
+##                    
+## </code></pre>
+</div>
+<div id="-" class="section level2">
+<h2>3. 시각화 그래프</h2>
+<p><code>ggplot</code> 시각화 팩키지를 통해 시각화 기능을 점검하고 한글에 대한 지원도 함게 점검한다.</p>
+<pre class="r"><code>
+ggplot(iris_df, aes(x=sepal.length, y=sepal.width, color=variety)) +
+  geom_point(size=2) +
+  theme_light(base_size=16, base_family=&quot;NanumGothic&quot;) + 
+  labs(x=&quot;꽃받침 길이&quot;, y=&quot;꽃받침 폭&quot;, title=&quot;꽃받침 길이와 폭&quot;)</code></pre>
+<div class="figure"><span id="fig:iris-viz"></span>
+<img src="/post/2017-09-13-iris_files/figure-html/iris-viz-1.png" alt="붓꽃 데이터 시각화" width="672" />
+<p class="caption">
+Figure 1: 붓꽃 데이터 시각화
+</p>
+</div>
+</div>
+<div class="section level2">
+<h2>4. 모형</h2>
+<pre class="r"><code>
+iris_df &lt;- iris_df %&gt;% 
+    mutate(variety = factor(variety))
+
+iris_rf &lt;- randomForest::randomForest(variety ~ ., data = iris_df, importance = TRUE)
+randomForest::importance(iris_rf)
+##                 Setosa Versicolor Virginica MeanDecreaseAccuracy
+## sepal.length  6.159268   6.860017  7.667069            10.645508
+## sepal.width   3.844855   1.249780  6.146818             5.490191
+## petal.length 22.415004  33.295473 28.251957            33.697498
+## petal.width  22.572715  32.634080 31.837685            34.463500
+##              MeanDecreaseGini
+## sepal.length         8.824313
+## sepal.width          2.416948
+## petal.length        43.588405
+## petal.width         44.387040
+
+randomForest::varImpPlot(iris_rf)</code></pre>
+<p><img src="/post/2017-09-13-iris_files/figure-html/iris-model-1.png" width="672" /></p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

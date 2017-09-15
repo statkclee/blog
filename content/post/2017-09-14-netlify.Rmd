@@ -1,0 +1,55 @@
+---
+title: "데이터 과학 블로그 배포"
+author: "xwMOOC 이광춘"
+date: 2017-09-15T13:09:13-06:00
+categories: ["R"]
+tags: ["R Markdown", "Netlify", "배포"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE, warning=FALSE)
+
+library(blogdown)
+
+```
+
+## 1. 데이터 분석 블로그 아키텍쳐
+
+데이터 분석에 대한 사내 경험공유를 위한 정정 웹사이트를 구축하여 누구나 R 마크다운(markdown)을 활용하여 
+쉽고 빠르게 데이터 분석에 대한 노하우를 공유한다. 
+
+- 저작도구: R Markdown, [blogdown](https://bookdown.org/yihui/blogdown/)
+- 정적 웹사이트 개발: [휴고(Hugo)](https://gohugo.io/)
+- 데이터 분석 블로그 웹서버: AWS EC2 인스턴스(t2.micor)
+    - t2.micro 인스턴스 사양: 1 vCPU, 1GB
+    - t2.micro 가격: $0.016/시간, 1,200원/$ 기준, 매월 `r format(0.016 * 24 * 30 * 1200,  big.mark = ",")`원
+
+
+``` {r echo=FALSE,  out.width = "77%", fig.align = "center"}
+blogdown::shortcode("figure", src = '"/fig/wz-blog-architecture.png"', alt = "Some alt text")
+```
+
+
+
+## 2. 데이터 분석 정적 웹사이트 블로그 구축
+
+데이터 분석 정적 웹사이트 블로그 구축을 위한 자세한 사항은 다음 웹사이트를 참고한다.
+
+[데이터 과학을 위한 저작도구, 블로그 - blogdown](https://statkclee.github.io/ds-authoring/ds-blogdown.html)
+
+
+예를 들어, AWS 클라우드에 데이터 분석 블로그를 배포하는 경우 다음과 같다.
+
+- Public DNS (IPv4): http://ec2-xx-xxx-xxxx-xxx.ap-northeast-2.compute.amazonaws.com/
+
+## 3. Netlify 배포
+
+Netlify 배포할 경우, 휴고 버젼이 매우 중요합니다. [3.1 Netlify](https://bookdown.org/yihui/blogdown/netlify.html)에서 `yihui`가 지적했듯이 휴고 기본버젼이 0.17인데 최소 0.20이상 사용할 것을 강조하고 있습니다. 특히, [Netlify](https://www.netlify.com/)에서 **HUGO_VERSION** 0.24.1로 설정할 경우 큰 문제는 없는 듯 하다.
+
+
+``` {r hugo-version}
+library(blogdown)
+hugo_version()
+```
