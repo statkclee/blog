@@ -1,6 +1,10 @@
 ---
 title: "About"
-date: "2016-05-05T21:48:51-07:00"
+date: "2017-07-07T07:07:07-07:00"
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme).
+2014년부터 xwMOOC 프로젝트를 진행하면서 [소프트웨어 카펜트리(Software Carpentry)](https://software-carpentry.org/) 와 [데이터 카펜트리(Data Carpentry)](https://datacarpentry.org/)가 많은 영감을 주었다. 그러던 와중에 2018년부터 소프트웨어 교육 이 초중등 교육과정에 의무화되었고, 알파고가 이세돌을 이긴 **알파고 쇼크**가 한국사회에 엄청난 파장을 일으켰다. 그와 더불어 청년, 중장년, 노년 할 것 없이 실업률이 사회적 문제로 대두되면서 기계가 인간의 직업을 빼앗아가는 주범으로 주목되고 있는 한편, 인공지능 기술을 밑에 깔고 있는 다양한 제품과 서비스가 쏟아지면서 우리의 삶을 그 어느 때보다 풍요롭게 만들고 있다.
+
+컴퓨팅 사고력, 데이터 과학, 인공지능, 로봇/기계를 이해하는 사람과 그렇지 못한 사람간에 삶의 질 차이는 점점더 현격히 벌어질 것이다. 지금이라도 늦지 않았다. 늦었다는 것을 알아차렸을 때가 가장 빠른 시점이다.
+
+본 블로그는 [**blogdown**](https://github.com/rstudio/blogdown) 팩키지에 영감을 받아 기존 워드프레이스, 제킬을 거쳐 휴고로 정착을 합니다.
