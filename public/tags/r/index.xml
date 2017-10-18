@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on 공식 xwMOOC 블로그</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on 공식 xwMOOC 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Oct 2017 13:09:13 -0600</lastBuildDate>
+    
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>제 3회  R Meetup</title>
+      <link>/2017/10/18/%EC%A0%9C-3%ED%9A%8C--r-meetup/</link>
+      <pubDate>Wed, 18 Oct 2017 13:09:13 -0600</pubDate>
+      
+      <guid>/2017/10/18/%EC%A0%9C-3%ED%9A%8C--r-meetup/</guid>
+      <description>We Love R  </description>
+    </item>
+    
+  </channel>
+</rss>

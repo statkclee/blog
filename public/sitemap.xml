@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2017/10/18/%EC%A0%9C-3%ED%9A%8C--r-meetup/</loc>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/09/15/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B3%BC%ED%95%99-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%B0%B0%ED%8F%AC/</loc>
     <lastmod>2017-09-15T13:09:13-06:00</lastmod>
   </url>
@@ -47,19 +52,31 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-09-15T13:09:13-06:00</lastmod>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2017-09-15T13:09:13-06:00</lastmod>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r-markdown/</loc>
     <lastmod>2017-09-15T13:09:13-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r-meetup/</loc>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -77,7 +94,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-09-15T13:09:13-06:00</lastmod>
+    <lastmod>2017-10-18T13:09:13-06:00</lastmod>
     <priority>0</priority>
   </url>
   
